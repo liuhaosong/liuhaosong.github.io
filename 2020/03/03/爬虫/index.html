@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="爬虫">
+  <meta name="description" content="爬虫的定义爬虫是一种按照一定的规则，自动抓取万维网信息的程序或脚本 爬虫的基本组成·URL管理模块·HTML下载模块·HTML解析模块·数据存储模块·爬虫调度模块 爬虫常用模块·requests·scrapy·pyspider爬虫只是一种技术，其他语言也可用于爬虫，但是python最合适 网络请求方法网络请求最常见的时GET和POST两种·GET：参数、关键信息在URL中·POST：需要提交信息">
 <meta property="og:type" content="article">
-<meta property="og:title" content="爬虫">
-<meta property="og:url" content="http://yoursite.com/2020/03/01/%E7%88%AC%E8%99%AB/index.html">
+<meta property="og:title" content="爬虫基础">
+<meta property="og:url" content="http://yoursite.com/2020/03/03/%E7%88%AC%E8%99%AB/index.html">
 <meta property="og:site_name" content="hasaki">
-<meta property="og:description" content="爬虫">
+<meta property="og:description" content="爬虫的定义爬虫是一种按照一定的规则，自动抓取万维网信息的程序或脚本 爬虫的基本组成·URL管理模块·HTML下载模块·HTML解析模块·数据存储模块·爬虫调度模块 爬虫常用模块·requests·scrapy·pyspider爬虫只是一种技术，其他语言也可用于爬虫，但是python最合适 网络请求方法网络请求最常见的时GET和POST两种·GET：参数、关键信息在URL中·POST：需要提交信息">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-01T14:00:49.412Z">
-<meta property="article:modified_time" content="2020-03-01T14:02:45.229Z">
+<meta property="article:published_time" content="2020-03-02T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-03-03T07:06:35.965Z">
 <meta property="article:author" content="liu">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/03/01/%E7%88%AC%E8%99%AB/">
+<link rel="canonical" href="http://yoursite.com/2020/03/03/%E7%88%AC%E8%99%AB/">
 
 
 <script id="page-configurations">
@@ -44,7 +44,7 @@
   };
 </script>
 
-  <title>爬虫 | hasaki</title>
+  <title>爬虫基础 | hasaki</title>
   
 
 
@@ -160,7 +160,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/01/%E7%88%AC%E8%99%AB/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/03/%E7%88%AC%E8%99%AB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -173,7 +173,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          爬虫
+          爬虫基础
         </h1>
 
         <div class="post-meta">
@@ -184,7 +184,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-03-01 22:00:49 / 修改时间：22:02:45" itemprop="dateCreated datePublished" datetime="2020-03-01T22:00:49+08:00">2020-03-01</time>
+              <time title="创建时间：2020-03-03 00:00:00 / 修改时间：15:06:35" itemprop="dateCreated datePublished" datetime="2020-03-03T00:00:00+08:00">2020-03-03</time>
             </span>
 
           
@@ -198,7 +198,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="爬虫"><a href="#爬虫" class="headerlink" title="爬虫"></a>爬虫</h2>
+        <h2 id="爬虫的定义"><a href="#爬虫的定义" class="headerlink" title="爬虫的定义"></a>爬虫的定义</h2><p>爬虫是一种按照一定的规则，自动抓取万维网信息的程序或脚本</p>
+<h2 id="爬虫的基本组成"><a href="#爬虫的基本组成" class="headerlink" title="爬虫的基本组成"></a>爬虫的基本组成</h2><p>·URL管理模块<br>·HTML下载模块<br>·HTML解析模块<br>·数据存储模块<br>·爬虫调度模块</p>
+<h2 id="爬虫常用模块"><a href="#爬虫常用模块" class="headerlink" title="爬虫常用模块"></a>爬虫常用模块</h2><p>·requests<br>·scrapy<br>·pyspider<br>爬虫只是一种技术，其他语言也可用于爬虫，但是python最合适</p>
+<h2 id="网络请求方法"><a href="#网络请求方法" class="headerlink" title="网络请求方法"></a>网络请求方法</h2><p>网络请求最常见的时GET和POST两种<br>·GET：参数、关键信息在URL中<br>·POST：需要提交信息</p>
+<h2 id="常见的HTML解析方法"><a href="#常见的HTML解析方法" class="headerlink" title="常见的HTML解析方法"></a>常见的HTML解析方法</h2><p>·正则表达式<br>·xpath语法<br>·css选择器</p>
+<h2 id="数据存储"><a href="#数据存储" class="headerlink" title="数据存储"></a>数据存储</h2><p>·文本存储csv等<br>·Mongo<br>·Redis<br>·MySQL</p>
+<h2 id="爬虫的安全"><a href="#爬虫的安全" class="headerlink" title="爬虫的安全"></a>爬虫的安全</h2><p>技术是无罪的，关键要看使用者是怎么使用的。 一般来讲，我们在正常浏览器上能够直接看到的数据都是能够采集的，但是要注意访问速度，如果速度过高，很可能就会让服务器的压力过大甚至是瘫痪 当然通过正常手段破解了一个网站，或者一个APP，抓取了一些我们能够直接看到的数据，一般是没问题的，但是千万不要将破解方法在网上传播，不然可能就会收到律师函，这些东西在网站的使用协议和APP的使用协议一般都会有明确说明的 如果爬取了别人网站的一些数据，拿来做做数据分析提取一些特征什么的，这些都是不透明的，但是如果直接放到自己的网站上，别人没有授权给你，那么也是会收到律师函的 如果使用爬虫去进行数据造假，比如在直播的时候刷弹幕，刷评论之类的，这就是数据造假，如果因此严重误导了大众的话，牢房是安排上了 至于用户信息和隐私数据更不要说了，动了不该动的数据，牢房肯定是能分配的 至于更多的可以了解一下《中华人民共和国网络安全法》</p>
+
     </div>
 
     
@@ -276,7 +283,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#爬虫"><span class="nav-number">1.</span> <span class="nav-text">爬虫</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#爬虫的定义"><span class="nav-number">1.</span> <span class="nav-text">爬虫的定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#爬虫的基本组成"><span class="nav-number">2.</span> <span class="nav-text">爬虫的基本组成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#爬虫常用模块"><span class="nav-number">3.</span> <span class="nav-text">爬虫常用模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络请求方法"><span class="nav-number">4.</span> <span class="nav-text">网络请求方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见的HTML解析方法"><span class="nav-number">5.</span> <span class="nav-text">常见的HTML解析方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据存储"><span class="nav-number">6.</span> <span class="nav-text">数据存储</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#爬虫的安全"><span class="nav-number">7.</span> <span class="nav-text">爬虫的安全</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

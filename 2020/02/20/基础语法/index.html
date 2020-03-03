@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="打印format：print(“我叫{}，年龄是{}”.format(name, age))%s也能像c语一样代指字符 字符strip：.strip()删除字符后面的空格replace：字符代替split：传入“，”就会以“，”为分割join：将多个字符串化为一个字符串列表：空列表，含元素列表，列表加法、乘法，嵌套列表元素：切片，append添加，pop删除，insert插入，in|not in判">
+  <meta name="description" content="打印formatprint(“我叫{}，年龄是{}”.format(name, age))%s也能像c语一样代指字符。 字符strip.strip()删除字符后面的空格 replace字符代替 split传入“，”就会以“，”为分割 join将多个字符串化为一个字符串 列表：空列表，含元素列表，列表加法、乘法，嵌套列表 元素：切片，append添加，pop删除，insert插入，in|not in">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基础语法">
 <meta property="og:url" content="http://yoursite.com/2020/02/20/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/index.html">
 <meta property="og:site_name" content="hasaki">
-<meta property="og:description" content="打印format：print(“我叫{}，年龄是{}”.format(name, age))%s也能像c语一样代指字符 字符strip：.strip()删除字符后面的空格replace：字符代替split：传入“，”就会以“，”为分割join：将多个字符串化为一个字符串列表：空列表，含元素列表，列表加法、乘法，嵌套列表元素：切片，append添加，pop删除，insert插入，in|not in判">
+<meta property="og:description" content="打印formatprint(“我叫{}，年龄是{}”.format(name, age))%s也能像c语一样代指字符。 字符strip.strip()删除字符后面的空格 replace字符代替 split传入“，”就会以“，”为分割 join将多个字符串化为一个字符串 列表：空列表，含元素列表，列表加法、乘法，嵌套列表 元素：切片，append添加，pop删除，insert插入，in|not in">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-20T14:11:44.000Z">
-<meta property="article:modified_time" content="2020-03-03T02:07:55.344Z">
+<meta property="article:modified_time" content="2020-03-03T08:26:28.912Z">
 <meta property="article:author" content="liu">
 <meta name="twitter:card" content="summary">
 
@@ -190,7 +190,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-03 10:07:55" itemprop="dateModified" datetime="2020-03-03T10:07:55+08:00">2020-03-03</time>
+                <time title="修改时间：2020-03-03 16:26:28" itemprop="dateModified" datetime="2020-03-03T16:26:28+08:00">2020-03-03</time>
               </span>
 
           
@@ -204,8 +204,74 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="打印"><a href="#打印" class="headerlink" title="打印"></a>打印</h2><p>format：print(“我叫{}，年龄是{}”.format(name, age))<br>%s也能像c语一样代指字符</p>
-<h2 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h2><p>strip：.strip()删除字符后面的空格<br>replace：字符代替<br>split：传入“，”就会以“，”为分割<br>join：将多个字符串化为一个字符串<br>列表：空列表，含元素列表，列表加法、乘法，嵌套列表<br>元素：切片，append添加，pop删除，insert插入，in|not in判断元素是否在列表，remove（）删除第一个相同元素<br>元组（与列表不同，不可修改）：<br>字典：<br>分支：<br>循环：<br>布尔值：<br>while：<br>range函数：<br>for循环：<br>函数：</p>
+        <h2 id="打印"><a href="#打印" class="headerlink" title="打印"></a>打印</h2><h3 id="format"><a href="#format" class="headerlink" title="format"></a>format</h3><p>print(“我叫{}，年龄是{}”.format(name, age))%s也能像c语一样代指字符。</p>
+<h2 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h2><h3 id="strip"><a href="#strip" class="headerlink" title="strip"></a>strip</h3><p>.strip()删除字符后面的空格</p>
+<h3 id="replace"><a href="#replace" class="headerlink" title="replace"></a>replace</h3><p>字符代替</p>
+<h3 id="split"><a href="#split" class="headerlink" title="split"></a>split</h3><p>传入“，”就会以“，”为分割</p>
+<h3 id="join"><a href="#join" class="headerlink" title="join"></a>join</h3><p>将多个字符串化为一个字符串</p>
+<h3 id="列表："><a href="#列表：" class="headerlink" title="列表："></a>列表：</h3><p>空列表，含元素列表，列表加法、乘法，嵌套列表</p>
+<h3 id="元素："><a href="#元素：" class="headerlink" title="元素："></a>元素：</h3><p>切片，append添加，pop删除，insert插入，in|not in判断元素是否在列表，remove（）删除第一个相同元素</p>
+<h3 id="元组（与列表不同，不可修改）"><a href="#元组（与列表不同，不可修改）" class="headerlink" title="元组（与列表不同，不可修改）"></a>元组（与列表不同，不可修改）</h3><p>·元素的创建</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tup = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line">print(tup)</span><br></pre></td></tr></table></figure>
+
+<p>·索引（元组也可以使用索引访问元素）</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tup = (<span class="number">1</span>,<span class="number">20</span>,<span class="number">3</span>,<span class="number">40</span>,[<span class="number">5</span>,<span class="number">60</span>])</span><br><span class="line">print(tup[<span class="number">1</span>])</span><br><span class="line">print(tup[<span class="number">4</span>][<span class="number">0</span>])</span><br></pre></td></tr></table></figure>
+
+<p>·切片</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tup = (<span class="number">1</span>,<span class="number">20</span>,<span class="number">3</span>,<span class="number">40</span>,[<span class="number">5</span>,<span class="number">60</span>])</span><br><span class="line">print([<span class="number">1</span>:<span class="number">3</span>])</span><br></pre></td></tr></table></figure>
+
+<p>·修改元组中的列表</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tup = (<span class="number">1</span>,<span class="number">20</span>,<span class="number">3</span>,<span class="number">40</span>,[<span class="number">5</span>,<span class="number">60</span>])</span><br><span class="line">tup[<span class="number">4</span>][<span class="number">0</span>] = <span class="number">50</span></span><br><span class="line">print(tup)</span><br></pre></td></tr></table></figure>
+
+<p>·元组拆包</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a,b = (<span class="number">100</span>,<span class="number">55</span>)</span><br><span class="line">print(a,b)</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tup = (<span class="string">"四川省"</span>,<span class="string">"成都市"</span>,<span class="string">"龙泉驿区"</span>,<span class="string">"十陵街道"</span>,<span class="string">"成都大学"</span>)</span><br><span class="line">*_, school = tup</span><br><span class="line">print(school)</span><br></pre></td></tr></table></figure>
+
+<h3 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h3><p>可以存储任意对象，如：字符串、数字、元组、列表等。且字典中的建时唯一的，且不可变类型。包括：字典的创建</p>
+<h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><p>·嵌套循环</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">i = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> i &lt;= <span class="number">9</span>:</span><br><span class="line">j = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> j &lt;= i:</span><br><span class="line">print(<span class="string">'%d * %d = %d '</span>%(i, j ,i * j), end=<span class="string">""</span>)</span><br><span class="line">j += <span class="number">1</span></span><br><span class="line">print()</span><br><span class="line">i += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<p>·range循环</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">range(start,stop,step)</span><br></pre></td></tr></table></figure>
+
+<p>·for循环</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">print(<span class="string">"起床了"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">print(<span class="string">"快要迟到了"</span>)</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">·<span class="keyword">break</span>关键字</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line"><span class="keyword">if</span> i == <span class="number">5</span>:</span><br><span class="line"><span class="keyword">break</span></span><br><span class="line">print(<span class="string">"拜拜"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>·continue关键字</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line"><span class="keyword">if</span> i == <span class="number">5</span>:</span><br><span class="line"><span class="keyword">continue</span></span><br><span class="line">print(i)</span><br></pre></td></tr></table></figure>
+
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>·函数代码块以 def 开头，后接函数标名和括号 () 最后就是一个英文冒号 :<br>·传递的参数必须放在括号里面，圆括号内定义参数<br>·函数内容必须缩进<br>·函数的第一行使用文档字符串形式存放函数说明</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_hello</span><span class="params">()</span>:</span></span><br><span class="line"><span class="string">"""重复打印hello"""</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">print(<span class="string">"hello"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>·函数调用</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义一个函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">prints</span><span class="params">(str)</span>:</span></span><br><span class="line"><span class="string">"""打印任何资料的字符串"""</span></span><br><span class="line">print(str)</span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">prints(<span class="string">"哈哈哈"</span>)</span><br><span class="line">prints(<span class="string">"hello， world"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>·函数参数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_info</span><span class="params">(name, age=<span class="number">18</span>)</span>:</span></span><br><span class="line"><span class="string">"""打印姓名和年龄"""</span></span><br><span class="line">print(<span class="string">"我的名字是%s，今年%d岁了！"</span> % (name, age))</span><br><span class="line">print_info(<span class="string">"张三"</span>, age=<span class="number">20</span>)</span><br><span class="line">print_info(<span class="string">"李四"</span>)</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line"><span class="keyword">for</span> arg <span class="keyword">in</span> args:</span><br><span class="line">print(arg)</span><br><span class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> kwargs.items():</span><br><span class="line">print(k, v)</span><br><span class="line">func(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, name=<span class="string">"李四"</span>, age=<span class="number">18</span>)</span><br></pre></td></tr></table></figure>
+
+<p>·return关键字</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">total = <span class="number">10</span> <span class="comment"># 全局变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">result</span><span class="params">(arg1, arg2)</span>:</span></span><br><span class="line"><span class="comment"># 局部变量total</span></span><br><span class="line">total = arg1 + arg2</span><br><span class="line">print(<span class="string">"函数内的局部变量是"</span>, total)</span><br><span class="line"><span class="keyword">return</span> total</span><br><span class="line">result(<span class="number">10</span>, <span class="number">20</span>)</span><br><span class="line">print(<span class="string">"函数外是全局变量"</span>, total)</span><br></pre></td></tr></table></figure>
+
+<p>·变量作用域<br>在所有的编程语言当中，都存在变量的作用域，一个程序的变量并不是在哪个位置都可以访问的。</p>
+<p>·全局变量和局部变量</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">total = <span class="number">10</span> <span class="comment"># 全局变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">result</span><span class="params">(arg1, arg2)</span>:</span></span><br><span class="line"><span class="comment"># 局部变量total</span></span><br><span class="line">total = arg1 + arg2</span><br><span class="line">print(<span class="string">"函数内的局部变量是"</span>, total)</span><br><span class="line"><span class="keyword">return</span> total</span><br><span class="line">result(<span class="number">10</span>, <span class="number">20</span>)</span><br><span class="line">print(<span class="string">"函数外是全局变量"</span>, total)</span><br></pre></td></tr></table></figure>
+
+<p>·global关键字<br>能够同时定义多个变量</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">10</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">set_num_value</span><span class="params">()</span>:</span></span><br><span class="line"><span class="comment"># 使用global声明全局变量</span></span><br><span class="line"><span class="keyword">global</span> num</span><br><span class="line">num = <span class="number">30</span></span><br><span class="line"><span class="keyword">return</span> num</span><br><span class="line">print(set_num_value())</span><br><span class="line">print(num)</span><br></pre></td></tr></table></figure>
+
+<p>·递归函数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 求1-100的和</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum_num</span><span class="params">(n)</span>:</span></span><br><span class="line">result = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n+<span class="number">1</span>):</span><br><span class="line">result += i</span><br><span class="line"><span class="keyword">return</span> result</span><br><span class="line">sum_num(<span class="number">100</span>)</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -225,8 +291,8 @@
       <i class="fa fa-chevron-left"></i> 我的第二篇博客
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/03/01/%E7%88%AC%E8%99%AB/" rel="next" title="爬虫">
-      爬虫 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/03/03/%E7%88%AC%E8%99%AB/" rel="next" title="爬虫基础">
+      爬虫基础 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -287,7 +353,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#打印"><span class="nav-number">1.</span> <span class="nav-text">打印</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符"><span class="nav-number">2.</span> <span class="nav-text">字符</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#打印"><span class="nav-number">1.</span> <span class="nav-text">打印</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#format"><span class="nav-number">1.1.</span> <span class="nav-text">format</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符"><span class="nav-number">2.</span> <span class="nav-text">字符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#strip"><span class="nav-number">2.1.</span> <span class="nav-text">strip</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#replace"><span class="nav-number">2.2.</span> <span class="nav-text">replace</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#split"><span class="nav-number">2.3.</span> <span class="nav-text">split</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#join"><span class="nav-number">2.4.</span> <span class="nav-text">join</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表："><span class="nav-number">2.5.</span> <span class="nav-text">列表：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元素："><span class="nav-number">2.6.</span> <span class="nav-text">元素：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元组（与列表不同，不可修改）"><span class="nav-number">2.7.</span> <span class="nav-text">元组（与列表不同，不可修改）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字典"><span class="nav-number">2.8.</span> <span class="nav-text">字典</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#循环"><span class="nav-number">2.9.</span> <span class="nav-text">循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数"><span class="nav-number">2.10.</span> <span class="nav-text">函数</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
