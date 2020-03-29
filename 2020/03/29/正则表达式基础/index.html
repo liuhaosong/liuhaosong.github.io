@@ -20,27 +20,31 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="hasaki">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Regular Expression什么是正则表达式世界上的信息是非常多的，但是我们关注的信息是有限的，假如我们希望只提取关注的数据，此时可以通过一些表达式进行提取，正则表达式就是其中一种进行数据筛选的表达式。 正则表达式在线测试网站 正则表达式不是Python独有的，在Python中需要通过re模块来实现 常见匹配模式^ ：^会匹配行或者字符串的起始位置，有时还会匹配整个文档的起始位置。  $">
+<meta property="og:type" content="article">
+<meta property="og:title" content="正则表达式基础">
+<meta property="og:url" content="http://yoursite.com/2020/03/29/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="hasaki">
+<meta property="og:description" content="Regular Expression什么是正则表达式世界上的信息是非常多的，但是我们关注的信息是有限的，假如我们希望只提取关注的数据，此时可以通过一些表达式进行提取，正则表达式就是其中一种进行数据筛选的表达式。 正则表达式在线测试网站 正则表达式不是Python独有的，在Python中需要通过re模块来实现 常见匹配模式^ ：^会匹配行或者字符串的起始位置，有时还会匹配整个文档的起始位置。  $">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-29T13:46:54.254Z">
+<meta property="article:modified_time" content="2020-03-29T13:46:54.256Z">
 <meta property="article:author" content="liu">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/03/29/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E7%A1%80/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false
+    isHome: false,
+    isPost: true
   };
 </script>
 
-  <title>hasaki</title>
+  <title>正则表达式基础 | hasaki</title>
   
 
 
@@ -152,10 +156,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/29/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -169,8 +173,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/29/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">正则表达式基础</a>
+          正则表达式基础
         </h1>
 
         <div class="post-meta">
@@ -194,7 +197,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Regular-Expression"><a href="#Regular-Expression" class="headerlink" title="Regular Expression"></a>Regular Expression</h1><h2 id="什么是正则表达式"><a href="#什么是正则表达式" class="headerlink" title="什么是正则表达式"></a>什么是正则表达式</h2><p>世界上的信息是非常多的，但是我们关注的信息是有限的，假如我们希望只提取关注的数据，此时可以通过一些表达式进行提取，正则表达式就是其中一种进行数据筛选的表达式。</p>
+        <h1 id="Regular-Expression"><a href="#Regular-Expression" class="headerlink" title="Regular Expression"></a>Regular Expression</h1><h2 id="什么是正则表达式"><a href="#什么是正则表达式" class="headerlink" title="什么是正则表达式"></a>什么是正则表达式</h2><p>世界上的信息是非常多的，但是我们关注的信息是有限的，假如我们希望只提取关注的数据，此时可以通过一些表达式进行提取，正则表达式就是其中一种进行数据筛选的表达式。</p>
 <p><a href="https://tool.oschina.net/regex/" target="_blank" rel="noopener">正则表达式在线测试网站</a></p>
 <p>正则表达式不是Python独有的，在Python中需要通过<code>re</code>模块来实现</p>
 <h2 id="常见匹配模式"><a href="#常见匹配模式" class="headerlink" title="常见匹配模式"></a>常见匹配模式</h2><p><code>^</code> ：^会匹配行或者字符串的起始位置，有时还会匹配整个文档的起始位置。 </p>
@@ -323,342 +326,33 @@ AttributeError: &apos;NoneType&apos; object has no attribute &apos;group&apos;</
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string = <span class="string">"&#123;'a'= 'A', 'b'='B'&#125;"</span></span><br><span class="line">pattern = <span class="string">'='</span></span><br><span class="line">result = re.sub(pattern, <span class="string">':'</span>, string)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
 
 <pre><code>{&apos;a&apos;: &apos;A&apos;, &apos;b&apos;:&apos;B&apos;}</code></pre>
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/03/%E7%88%AC%E8%99%AB/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="liu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="hasaki">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/03/%E7%88%AC%E8%99%AB/" class="post-title-link" itemprop="url">爬虫基础</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-03-03 00:00:00 / 修改时间：15:06:35" itemprop="dateCreated datePublished" datetime="2020-03-03T00:00:00+08:00">2020-03-03</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="爬虫的定义"><a href="#爬虫的定义" class="headerlink" title="爬虫的定义"></a>爬虫的定义</h2><p>爬虫是一种按照一定的规则，自动抓取万维网信息的程序或脚本</p>
-<h2 id="爬虫的基本组成"><a href="#爬虫的基本组成" class="headerlink" title="爬虫的基本组成"></a>爬虫的基本组成</h2><p>·URL管理模块<br>·HTML下载模块<br>·HTML解析模块<br>·数据存储模块<br>·爬虫调度模块</p>
-<h2 id="爬虫常用模块"><a href="#爬虫常用模块" class="headerlink" title="爬虫常用模块"></a>爬虫常用模块</h2><p>·requests<br>·scrapy<br>·pyspider<br>爬虫只是一种技术，其他语言也可用于爬虫，但是python最合适</p>
-<h2 id="网络请求方法"><a href="#网络请求方法" class="headerlink" title="网络请求方法"></a>网络请求方法</h2><p>网络请求最常见的时GET和POST两种<br>·GET：参数、关键信息在URL中<br>·POST：需要提交信息</p>
-<h2 id="常见的HTML解析方法"><a href="#常见的HTML解析方法" class="headerlink" title="常见的HTML解析方法"></a>常见的HTML解析方法</h2><p>·正则表达式<br>·xpath语法<br>·css选择器</p>
-<h2 id="数据存储"><a href="#数据存储" class="headerlink" title="数据存储"></a>数据存储</h2><p>·文本存储csv等<br>·Mongo<br>·Redis<br>·MySQL</p>
-<h2 id="爬虫的安全"><a href="#爬虫的安全" class="headerlink" title="爬虫的安全"></a>爬虫的安全</h2><p>技术是无罪的，关键要看使用者是怎么使用的。 一般来讲，我们在正常浏览器上能够直接看到的数据都是能够采集的，但是要注意访问速度，如果速度过高，很可能就会让服务器的压力过大甚至是瘫痪 当然通过正常手段破解了一个网站，或者一个APP，抓取了一些我们能够直接看到的数据，一般是没问题的，但是千万不要将破解方法在网上传播，不然可能就会收到律师函，这些东西在网站的使用协议和APP的使用协议一般都会有明确说明的 如果爬取了别人网站的一些数据，拿来做做数据分析提取一些特征什么的，这些都是不透明的，但是如果直接放到自己的网站上，别人没有授权给你，那么也是会收到律师函的 如果使用爬虫去进行数据造假，比如在直播的时候刷弹幕，刷评论之类的，这就是数据造假，如果因此严重误导了大众的话，牢房是安排上了 至于用户信息和隐私数据更不要说了，动了不该动的数据，牢房肯定是能分配的 至于更多的可以了解一下《中华人民共和国网络安全法》</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/20/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="liu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="hasaki">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/20/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-title-link" itemprop="url">基础语法</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-20 22:11:44" itemprop="dateCreated datePublished" datetime="2020-02-20T22:11:44+08:00">2020-02-20</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-03 16:26:28" itemprop="dateModified" datetime="2020-03-03T16:26:28+08:00">2020-03-03</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="打印"><a href="#打印" class="headerlink" title="打印"></a>打印</h2><h3 id="format"><a href="#format" class="headerlink" title="format"></a>format</h3><p>print(“我叫{}，年龄是{}”.format(name, age))%s也能像c语一样代指字符。</p>
-<h2 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h2><h3 id="strip"><a href="#strip" class="headerlink" title="strip"></a>strip</h3><p>.strip()删除字符后面的空格</p>
-<h3 id="replace"><a href="#replace" class="headerlink" title="replace"></a>replace</h3><p>字符代替</p>
-<h3 id="split"><a href="#split" class="headerlink" title="split"></a>split</h3><p>传入“，”就会以“，”为分割</p>
-<h3 id="join"><a href="#join" class="headerlink" title="join"></a>join</h3><p>将多个字符串化为一个字符串</p>
-<h3 id="列表："><a href="#列表：" class="headerlink" title="列表："></a>列表：</h3><p>空列表，含元素列表，列表加法、乘法，嵌套列表</p>
-<h3 id="元素："><a href="#元素：" class="headerlink" title="元素："></a>元素：</h3><p>切片，append添加，pop删除，insert插入，in|not in判断元素是否在列表，remove（）删除第一个相同元素</p>
-<h3 id="元组（与列表不同，不可修改）"><a href="#元组（与列表不同，不可修改）" class="headerlink" title="元组（与列表不同，不可修改）"></a>元组（与列表不同，不可修改）</h3><p>·元素的创建</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tup = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line">print(tup)</span><br></pre></td></tr></table></figure>
-
-<p>·索引（元组也可以使用索引访问元素）</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tup = (<span class="number">1</span>,<span class="number">20</span>,<span class="number">3</span>,<span class="number">40</span>,[<span class="number">5</span>,<span class="number">60</span>])</span><br><span class="line">print(tup[<span class="number">1</span>])</span><br><span class="line">print(tup[<span class="number">4</span>][<span class="number">0</span>])</span><br></pre></td></tr></table></figure>
-
-<p>·切片</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tup = (<span class="number">1</span>,<span class="number">20</span>,<span class="number">3</span>,<span class="number">40</span>,[<span class="number">5</span>,<span class="number">60</span>])</span><br><span class="line">print([<span class="number">1</span>:<span class="number">3</span>])</span><br></pre></td></tr></table></figure>
-
-<p>·修改元组中的列表</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tup = (<span class="number">1</span>,<span class="number">20</span>,<span class="number">3</span>,<span class="number">40</span>,[<span class="number">5</span>,<span class="number">60</span>])</span><br><span class="line">tup[<span class="number">4</span>][<span class="number">0</span>] = <span class="number">50</span></span><br><span class="line">print(tup)</span><br></pre></td></tr></table></figure>
-
-<p>·元组拆包</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a,b = (<span class="number">100</span>,<span class="number">55</span>)</span><br><span class="line">print(a,b)</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tup = (<span class="string">"四川省"</span>,<span class="string">"成都市"</span>,<span class="string">"龙泉驿区"</span>,<span class="string">"十陵街道"</span>,<span class="string">"成都大学"</span>)</span><br><span class="line">*_, school = tup</span><br><span class="line">print(school)</span><br></pre></td></tr></table></figure>
-
-<h3 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h3><p>可以存储任意对象，如：字符串、数字、元组、列表等。且字典中的建时唯一的，且不可变类型。包括：字典的创建</p>
-<h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><p>·嵌套循环</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">i = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> i &lt;= <span class="number">9</span>:</span><br><span class="line">j = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> j &lt;= i:</span><br><span class="line">print(<span class="string">'%d * %d = %d '</span>%(i, j ,i * j), end=<span class="string">""</span>)</span><br><span class="line">j += <span class="number">1</span></span><br><span class="line">print()</span><br><span class="line">i += <span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<p>·range循环</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">range(start,stop,step)</span><br></pre></td></tr></table></figure>
-
-<p>·for循环</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">print(<span class="string">"起床了"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">print(<span class="string">"快要迟到了"</span>)</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">·<span class="keyword">break</span>关键字</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line"><span class="keyword">if</span> i == <span class="number">5</span>:</span><br><span class="line"><span class="keyword">break</span></span><br><span class="line">print(<span class="string">"拜拜"</span>)</span><br></pre></td></tr></table></figure>
-
-<p>·continue关键字</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line"><span class="keyword">if</span> i == <span class="number">5</span>:</span><br><span class="line"><span class="keyword">continue</span></span><br><span class="line">print(i)</span><br></pre></td></tr></table></figure>
-
-<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>·函数代码块以 def 开头，后接函数标名和括号 () 最后就是一个英文冒号 :<br>·传递的参数必须放在括号里面，圆括号内定义参数<br>·函数内容必须缩进<br>·函数的第一行使用文档字符串形式存放函数说明</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_hello</span><span class="params">()</span>:</span></span><br><span class="line"><span class="string">"""重复打印hello"""</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">print(<span class="string">"hello"</span>)</span><br></pre></td></tr></table></figure>
-
-<p>·函数调用</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义一个函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">prints</span><span class="params">(str)</span>:</span></span><br><span class="line"><span class="string">"""打印任何资料的字符串"""</span></span><br><span class="line">print(str)</span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">prints(<span class="string">"哈哈哈"</span>)</span><br><span class="line">prints(<span class="string">"hello， world"</span>)</span><br></pre></td></tr></table></figure>
-
-<p>·函数参数</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_info</span><span class="params">(name, age=<span class="number">18</span>)</span>:</span></span><br><span class="line"><span class="string">"""打印姓名和年龄"""</span></span><br><span class="line">print(<span class="string">"我的名字是%s，今年%d岁了！"</span> % (name, age))</span><br><span class="line">print_info(<span class="string">"张三"</span>, age=<span class="number">20</span>)</span><br><span class="line">print_info(<span class="string">"李四"</span>)</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line"><span class="keyword">for</span> arg <span class="keyword">in</span> args:</span><br><span class="line">print(arg)</span><br><span class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> kwargs.items():</span><br><span class="line">print(k, v)</span><br><span class="line">func(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, name=<span class="string">"李四"</span>, age=<span class="number">18</span>)</span><br></pre></td></tr></table></figure>
-
-<p>·return关键字</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">total = <span class="number">10</span> <span class="comment"># 全局变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">result</span><span class="params">(arg1, arg2)</span>:</span></span><br><span class="line"><span class="comment"># 局部变量total</span></span><br><span class="line">total = arg1 + arg2</span><br><span class="line">print(<span class="string">"函数内的局部变量是"</span>, total)</span><br><span class="line"><span class="keyword">return</span> total</span><br><span class="line">result(<span class="number">10</span>, <span class="number">20</span>)</span><br><span class="line">print(<span class="string">"函数外是全局变量"</span>, total)</span><br></pre></td></tr></table></figure>
-
-<p>·变量作用域<br>在所有的编程语言当中，都存在变量的作用域，一个程序的变量并不是在哪个位置都可以访问的。</p>
-<p>·全局变量和局部变量</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">total = <span class="number">10</span> <span class="comment"># 全局变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">result</span><span class="params">(arg1, arg2)</span>:</span></span><br><span class="line"><span class="comment"># 局部变量total</span></span><br><span class="line">total = arg1 + arg2</span><br><span class="line">print(<span class="string">"函数内的局部变量是"</span>, total)</span><br><span class="line"><span class="keyword">return</span> total</span><br><span class="line">result(<span class="number">10</span>, <span class="number">20</span>)</span><br><span class="line">print(<span class="string">"函数外是全局变量"</span>, total)</span><br></pre></td></tr></table></figure>
-
-<p>·global关键字<br>能够同时定义多个变量</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">10</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">set_num_value</span><span class="params">()</span>:</span></span><br><span class="line"><span class="comment"># 使用global声明全局变量</span></span><br><span class="line"><span class="keyword">global</span> num</span><br><span class="line">num = <span class="number">30</span></span><br><span class="line"><span class="keyword">return</span> num</span><br><span class="line">print(set_num_value())</span><br><span class="line">print(num)</span><br></pre></td></tr></table></figure>
-
-<p>·递归函数</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 求1-100的和</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum_num</span><span class="params">(n)</span>:</span></span><br><span class="line">result = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n+<span class="number">1</span>):</span><br><span class="line">result += i</span><br><span class="line"><span class="keyword">return</span> result</span><br><span class="line">sum_num(<span class="number">100</span>)</span><br></pre></td></tr></table></figure>
-
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/03/%E7%88%AC%E8%99%AB/" rel="prev" title="爬虫基础">
+      <i class="fa fa-chevron-left"></i> 爬虫基础
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="liu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="hasaki">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">我的第二篇博客</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-02-19 08:45:44 / 修改时间：09:28:14" itemprop="dateCreated datePublished" datetime="2020-02-19T08:45:44+08:00">2020-02-19</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="雪中悍刀行"><a href="#雪中悍刀行" class="headerlink" title="雪中悍刀行"></a>雪中悍刀行</h2><p>有个白狐儿脸，佩双刀绣冬春雷，要做那天下第一。湖底有白发老魁爱吃荤。缺门牙老仆背剑匣。山上有个骑青牛的年轻师叔祖，不敢下山。有个骑熊猫扛向日葵不太冷的少女杀手。 这个江湖，高人出行要注重出尘装扮，女侠行走江湖要注意培养人气，宗派要跟庙堂打好关系。 而主角，则潇洒带刀，把江湖捅了一个通透。 小二，上酒～</p>
-<h2 id="斗罗大陆"><a href="#斗罗大陆" class="headerlink" title="斗罗大陆"></a>斗罗大陆</h2><p>初代史莱克七怪，之所以叫史莱克七怪，有几个原因：一个是因为他们是出身史莱克学院的怪物天才，然后就是因为当时整个学院也只有他们七个人而已；而最重要，也是令史莱克学院为之扬名的，就是他们代表学院所参加的那一场全大陆高级魂师学院精英大赛。在那场大赛开始之时，没有人看好史莱克七怪，史莱克学院也是籍籍无名。但是，史莱克七怪却凭借着自身实力，逐渐杀出重围，并且冲进了最后的决赛。他们决赛的对手，来自于强大的武魂殿，在整体实力完全逊色于对手的情况下。在史莱克七怪灵魂人物唐三的率领下，史莱克七怪力战而胜，从而奠定了史莱克学院未来成为大陆第一学院的基础。史莱克七怪之名也从此传扬开来。<br>为了感念初代史莱克七怪为学院所作的贡献，每隔五年，学院都会选出新的史莱克七怪，而他们，也将代表学院参加五年一度的全大陆高级魂师学院斗魂大赛，而初代史莱克七怪则被后世誉为“史莱克七圣”。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="liu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="hasaki">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">我的第一篇博客</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-02-18 16:05:02 / 修改时间：19:26:41" itemprop="dateCreated datePublished" datetime="2020-02-18T16:05:02+08:00">2020-02-18</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="第一个标题"><a href="#第一个标题" class="headerlink" title="第一个标题"></a>第一个标题</h2><p>这特么作者写的啥啊</p>
-<h2 id="心情"><a href="#心情" class="headerlink" title="心情"></a>心情</h2><p>无比忐忑的心情</p>
-<h2 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h2><p>作者真特么辣鸡</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
   </article>
   
   
   
 
   </div>
-
-  
-
 
 
           </div>
@@ -709,6 +403,7 @@ AttributeError: &apos;NoneType&apos; object has no attribute &apos;group&apos;</
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Regular-Expression"><span class="nav-number">1.</span> <span class="nav-text">Regular Expression</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是正则表达式"><span class="nav-number">1.1.</span> <span class="nav-text">什么是正则表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见匹配模式"><span class="nav-number">1.2.</span> <span class="nav-text">常见匹配模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">1.3.</span> <span class="nav-text">函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原子"><span class="nav-number">1.4.</span> <span class="nav-text">原子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原子表"><span class="nav-number">1.5.</span> <span class="nav-text">原子表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元字符"><span class="nav-number">1.6.</span> <span class="nav-text">元字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模式分组"><span class="nav-number">1.7.</span> <span class="nav-text">模式分组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模式修正符"><span class="nav-number">1.8.</span> <span class="nav-text">模式修正符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#量词"><span class="nav-number">1.9.</span> <span class="nav-text">量词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#懒惰限定符"><span class="nav-number">1.10.</span> <span class="nav-text">懒惰限定符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#贪婪模式与懒惰模式"><span class="nav-number">1.11.</span> <span class="nav-text">贪婪模式与懒惰模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转义字符"><span class="nav-number">1.12.</span> <span class="nav-text">转义字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re-sub"><span class="nav-number">1.13.</span> <span class="nav-text">re.sub()</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
