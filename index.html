@@ -156,6 +156,64 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/25/%E5%BF%85%E5%BA%94%E5%A3%81%E7%BA%B8%E7%88%AC%E5%8F%96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hasaki">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/25/%E5%BF%85%E5%BA%94%E5%A3%81%E7%BA%B8%E7%88%AC%E5%8F%96/" class="post-title-link" itemprop="url">必应壁纸爬取</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-25 22:24:50" itemprop="dateCreated datePublished" datetime="2020-04-25T22:24:50+08:00">2020-04-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BingCrawler</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.BASE_URL = <span class="string">"https://bing.ioliu.cn"</span></span><br><span class="line">        self.TOTAL_PAGE = <span class="number">124</span></span><br><span class="line">        self.headers = &#123;</span><br><span class="line">            <span class="string">"User-Agent"</span>: <span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36"</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">spider</span><span class="params">(self)</span>:</span></span><br><span class="line">        session = requests.Session()</span><br><span class="line">        <span class="keyword">for</span> index <span class="keyword">in</span> range(<span class="number">1</span> ,self.TOTAL_PAGE+<span class="number">1</span>):</span><br><span class="line">            url = self.BASE_URL + <span class="string">f"/?p=<span class="subst">&#123;index&#125;</span>"</span></span><br><span class="line">            response = session.get(url=url, headers=self.headers)</span><br><span class="line">            <span class="keyword">yield</span> response.content.decode(<span class="string">"utf8"</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">parser</span><span class="params">(html)</span>:</span></span><br><span class="line">        selector = etree.HTML(html)</span><br><span class="line">        url_list = selector.xpath(<span class="string">"//div[@class='item']//div[@class='options']/a[2]/@href"</span>)</span><br><span class="line">        <span class="keyword">return</span> url_list</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">save_picture</span><span class="params">(self, url_list)</span>:</span></span><br><span class="line">        session = requests.Session()</span><br><span class="line">        <span class="keyword">for</span> url <span class="keyword">in</span> url_list:</span><br><span class="line">            file_name = url.split(<span class="string">"/"</span>)[<span class="number">2</span>][:<span class="number">-15</span>] + <span class="string">".jpg"</span></span><br><span class="line">            picture_url =  self.BASE_URL + url</span><br><span class="line">            response = session.get(picture_url, headers=self.headers)</span><br><span class="line">            <span class="keyword">with</span> open(file_name, <span class="string">"wb"</span>) <span class="keyword">as</span> file:</span><br><span class="line">                file.write(response.content)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        html_gen = self.spider()</span><br><span class="line">        <span class="keyword">for</span> html <span class="keyword">in</span> html_gen:</span><br><span class="line">            url_list = self.parser(html)</span><br><span class="line">            self.save_picture(url_list)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    bing_spider = BingCrawler()</span><br><span class="line">    bing_spider.run()</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/25/B%E7%AB%99%E8%AF%84%E8%AE%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -874,7 +932,7 @@ AttributeError: &apos;NoneType&apos; object has no attribute &apos;group&apos;</
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
