@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="1import urllib.request   1import urllib.parse   1import http.cookiejar   1import gzip   1import json   12345678910111213141516171819202122232425262728293031323334353637def crawler():    url &#x3D; &quot;https:&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="B站评论">
+<meta property="og:url" content="http://yoursite.com/2020/04/25/B%E7%AB%99%E8%AF%84%E8%AE%BA/index.html">
+<meta property="og:site_name" content="hasaki">
+<meta property="og:description" content="1import urllib.request   1import urllib.parse   1import http.cookiejar   1import gzip   1import json   12345678910111213141516171819202122232425262728293031323334353637def crawler():    url &#x3D; &quot;https:&#x2F;">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-25T03:02:02.248Z">
+<meta property="article:modified_time" content="2020-04-25T03:02:02.249Z">
+<meta property="article:author" content="liu">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2020/04/25/B%E7%AB%99%E8%AF%84%E8%AE%BA/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>B站评论 | hasaki</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">hasaki</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-right"></div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/25/B%E7%AB%99%E8%AF%84%E8%AE%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hasaki">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          B站评论
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-25 11:02:02" itemprop="dateCreated datePublished" datetime="2020-04-25T11:02:02+08:00">2020-04-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.parse</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> http.cookiejar</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gzip</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">crawler</span><span class="params">()</span>:</span></span><br><span class="line">    url = <span class="string">"https://api.bilibili.com/x/v2/reply/add"</span></span><br><span class="line">    headers = &#123;</span><br><span class="line">        <span class="string">"Accept"</span>: <span class="string">"application/json, text/javascript, */*; q=0.01"</span>,</span><br><span class="line">        <span class="string">"Accept-Encoding"</span>: <span class="string">"gzip, deflate, br"</span>,</span><br><span class="line">        <span class="string">"Accept-Language"</span>: <span class="string">"zh-CN,zh;q=0.9,en;q=0.8"</span>,</span><br><span class="line">        <span class="string">"Connection"</span>: <span class="string">"keep-alive"</span>,</span><br><span class="line">        <span class="string">"Content-Type"</span>: <span class="string">"application/x-www-form-urlencoded; charset=UTF-8"</span>,</span><br><span class="line">        <span class="string">"Cookie"</span>: <span class="string">"_uuid=A674206E-E048-2012-1032-BF0FD75BC70E99970infoc; buvid3=F4A09182-27A1-4DAD-8F93-C3164E9CAF9053914infoc; sid=6rxdamki; im_notify_type_478149120=0; CURRENT_FNVAL=16; LIVE_BUVID=AUTO4915829617489886; rpdid=|(J|YkRm|Ruk0J'ul)kmYu~l|; DedeUserID=478149120; DedeUserID__ckMd5=b117727f75a94a18; SESSDATA=50d5ba27%2C1601444487%2Cc9727*41; bili_jct=fda4acd2a3e2f0fa699ee9e33bbdc774; CURRENT_QUALITY=80; bp_t_offset_478149120=377922904044417661; PVID=1"</span>,</span><br><span class="line">        <span class="string">"Host"</span>: <span class="string">"api.bilibili.com"</span>,</span><br><span class="line">        <span class="string">"Origin"</span>: <span class="string">"https://www.bilibili.com"</span>,</span><br><span class="line">        <span class="string">"Referer"</span>: <span class="string">"https://www.bilibili.com/video/BV1pV411Z7RC"</span>,</span><br><span class="line">        <span class="string">"Sec-Fetch-Dest"</span>: <span class="string">"empty"</span>,</span><br><span class="line">        <span class="string">"Sec-Fetch-Mode"</span>: <span class="string">"cors"</span>,</span><br><span class="line">        <span class="string">"Sec-Fetch-Site"</span>: <span class="string">"same-site"</span>,</span><br><span class="line">        <span class="string">"User-Agent"</span>: <span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36"</span>,</span><br><span class="line">    &#125;</span><br><span class="line">    form_data = &#123;</span><br><span class="line">        <span class="string">"oid"</span>: <span class="number">412845071</span>,</span><br><span class="line">        <span class="string">"type"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="string">"message"</span>: <span class="string">"你想回学校了吗？"</span>,</span><br><span class="line">        <span class="string">"plat"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="string">"jsonp"</span>: <span class="string">"jsonp"</span>,</span><br><span class="line">        <span class="string">"csrf"</span>: <span class="string">"fda4acd2a3e2f0fa699ee9e33bbdc774"</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    data = bytes(urllib.parse.urlencode(form_data),encoding=<span class="string">"utf-8"</span>)</span><br><span class="line">    r = urllib.request.Request(url=url,data=data,headers=headers)</span><br><span class="line">    cookie = http.cookiejar.CookieJar()</span><br><span class="line">    handler = urllib.request.HTTPCookieProcessor(cookie)</span><br><span class="line">    opener = urllib.request.build_opener(handler)</span><br><span class="line">    <span class="comment">#urllib.request.install_opener(opener)</span></span><br><span class="line">    response = opener.open(r)</span><br><span class="line">    resp = gzip.GzipFile(fileobj=response)</span><br><span class="line">    print(resp.read().decode(<span class="string">"utf-8"</span>))</span><br><span class="line"></span><br><span class="line">crawler()</span><br></pre></td></tr></table></figure>
+
+
+<pre><code>---------------------------------------------------------------------------
+
+OSError                                   Traceback (most recent call last)
+
+&lt;ipython-input-7-0156b7c4ecdc&gt; in &lt;module&gt;
+     35     print(resp.read().decode(&quot;utf-8&quot;))
+     36 
+---&gt; 37 crawler()
+
+
+&lt;ipython-input-7-0156b7c4ecdc&gt; in crawler()
+     33     response = opener.open(r)
+     34     resp = gzip.GzipFile(fileobj=response)
+---&gt; 35     print(resp.read().decode(&quot;utf-8&quot;))
+     36 
+     37 crawler()
+
+
+e:\py\python37\lib\gzip.py in read(self, size)
+    274             import errno
+    275             raise OSError(errno.EBADF, &quot;read() on write-only GzipFile object&quot;)
+--&gt; 276         return self._buffer.read(size)
+    277 
+    278     def read1(self, size=-1):
+
+
+e:\py\python37\lib\gzip.py in read(self, size)
+    461                 # jump to the next member, if there is one.
+    462                 self._init_read()
+--&gt; 463                 if not self._read_gzip_header():
+    464                     self._size = self._pos
+    465                     return b&quot;&quot;
+
+
+e:\py\python37\lib\gzip.py in _read_gzip_header(self)
+    409 
+    410         if magic != b&apos;\037\213&apos;:
+--&gt; 411             raise OSError(&apos;Not a gzipped file (%r)&apos; % magic)
+    412 
+    413         (method, flag,
+
+
+OSError: Not a gzipped file (b&apos;{&quot;&apos;)</code></pre>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/25/%E7%9C%81%E4%BB%BD%E8%B6%85%E9%93%BE%E6%8E%A5%E7%9A%84%E7%88%AC%E5%8F%96/" rel="prev" title="省份超链接的爬取">
+      <i class="fa fa-chevron-left"></i> 省份超链接的爬取
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">liu</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">liu</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

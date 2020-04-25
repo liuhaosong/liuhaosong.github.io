@@ -156,6 +156,279 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/25/B%E7%AB%99%E8%AF%84%E8%AE%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hasaki">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/25/B%E7%AB%99%E8%AF%84%E8%AE%BA/" class="post-title-link" itemprop="url">B站评论</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-25 11:02:02" itemprop="dateCreated datePublished" datetime="2020-04-25T11:02:02+08:00">2020-04-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.parse</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> http.cookiejar</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gzip</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">crawler</span><span class="params">()</span>:</span></span><br><span class="line">    url = <span class="string">"https://api.bilibili.com/x/v2/reply/add"</span></span><br><span class="line">    headers = &#123;</span><br><span class="line">        <span class="string">"Accept"</span>: <span class="string">"application/json, text/javascript, */*; q=0.01"</span>,</span><br><span class="line">        <span class="string">"Accept-Encoding"</span>: <span class="string">"gzip, deflate, br"</span>,</span><br><span class="line">        <span class="string">"Accept-Language"</span>: <span class="string">"zh-CN,zh;q=0.9,en;q=0.8"</span>,</span><br><span class="line">        <span class="string">"Connection"</span>: <span class="string">"keep-alive"</span>,</span><br><span class="line">        <span class="string">"Content-Type"</span>: <span class="string">"application/x-www-form-urlencoded; charset=UTF-8"</span>,</span><br><span class="line">        <span class="string">"Cookie"</span>: <span class="string">"_uuid=A674206E-E048-2012-1032-BF0FD75BC70E99970infoc; buvid3=F4A09182-27A1-4DAD-8F93-C3164E9CAF9053914infoc; sid=6rxdamki; im_notify_type_478149120=0; CURRENT_FNVAL=16; LIVE_BUVID=AUTO4915829617489886; rpdid=|(J|YkRm|Ruk0J'ul)kmYu~l|; DedeUserID=478149120; DedeUserID__ckMd5=b117727f75a94a18; SESSDATA=50d5ba27%2C1601444487%2Cc9727*41; bili_jct=fda4acd2a3e2f0fa699ee9e33bbdc774; CURRENT_QUALITY=80; bp_t_offset_478149120=377922904044417661; PVID=1"</span>,</span><br><span class="line">        <span class="string">"Host"</span>: <span class="string">"api.bilibili.com"</span>,</span><br><span class="line">        <span class="string">"Origin"</span>: <span class="string">"https://www.bilibili.com"</span>,</span><br><span class="line">        <span class="string">"Referer"</span>: <span class="string">"https://www.bilibili.com/video/BV1pV411Z7RC"</span>,</span><br><span class="line">        <span class="string">"Sec-Fetch-Dest"</span>: <span class="string">"empty"</span>,</span><br><span class="line">        <span class="string">"Sec-Fetch-Mode"</span>: <span class="string">"cors"</span>,</span><br><span class="line">        <span class="string">"Sec-Fetch-Site"</span>: <span class="string">"same-site"</span>,</span><br><span class="line">        <span class="string">"User-Agent"</span>: <span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36"</span>,</span><br><span class="line">    &#125;</span><br><span class="line">    form_data = &#123;</span><br><span class="line">        <span class="string">"oid"</span>: <span class="number">412845071</span>,</span><br><span class="line">        <span class="string">"type"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="string">"message"</span>: <span class="string">"你想回学校了吗？"</span>,</span><br><span class="line">        <span class="string">"plat"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="string">"jsonp"</span>: <span class="string">"jsonp"</span>,</span><br><span class="line">        <span class="string">"csrf"</span>: <span class="string">"fda4acd2a3e2f0fa699ee9e33bbdc774"</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    data = bytes(urllib.parse.urlencode(form_data),encoding=<span class="string">"utf-8"</span>)</span><br><span class="line">    r = urllib.request.Request(url=url,data=data,headers=headers)</span><br><span class="line">    cookie = http.cookiejar.CookieJar()</span><br><span class="line">    handler = urllib.request.HTTPCookieProcessor(cookie)</span><br><span class="line">    opener = urllib.request.build_opener(handler)</span><br><span class="line">    <span class="comment">#urllib.request.install_opener(opener)</span></span><br><span class="line">    response = opener.open(r)</span><br><span class="line">    resp = gzip.GzipFile(fileobj=response)</span><br><span class="line">    print(resp.read().decode(<span class="string">"utf-8"</span>))</span><br><span class="line"></span><br><span class="line">crawler()</span><br></pre></td></tr></table></figure>
+
+
+<pre><code>---------------------------------------------------------------------------
+
+OSError                                   Traceback (most recent call last)
+
+&lt;ipython-input-7-0156b7c4ecdc&gt; in &lt;module&gt;
+     35     print(resp.read().decode(&quot;utf-8&quot;))
+     36 
+---&gt; 37 crawler()
+
+
+&lt;ipython-input-7-0156b7c4ecdc&gt; in crawler()
+     33     response = opener.open(r)
+     34     resp = gzip.GzipFile(fileobj=response)
+---&gt; 35     print(resp.read().decode(&quot;utf-8&quot;))
+     36 
+     37 crawler()
+
+
+e:\py\python37\lib\gzip.py in read(self, size)
+    274             import errno
+    275             raise OSError(errno.EBADF, &quot;read() on write-only GzipFile object&quot;)
+--&gt; 276         return self._buffer.read(size)
+    277 
+    278     def read1(self, size=-1):
+
+
+e:\py\python37\lib\gzip.py in read(self, size)
+    461                 # jump to the next member, if there is one.
+    462                 self._init_read()
+--&gt; 463                 if not self._read_gzip_header():
+    464                     self._size = self._pos
+    465                     return b&quot;&quot;
+
+
+e:\py\python37\lib\gzip.py in _read_gzip_header(self)
+    409 
+    410         if magic != b&apos;\037\213&apos;:
+--&gt; 411             raise OSError(&apos;Not a gzipped file (%r)&apos; % magic)
+    412 
+    413         (method, flag,
+
+
+OSError: Not a gzipped file (b&apos;{&quot;&apos;)</code></pre>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/25/%E7%9C%81%E4%BB%BD%E8%B6%85%E9%93%BE%E6%8E%A5%E7%9A%84%E7%88%AC%E5%8F%96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hasaki">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/25/%E7%9C%81%E4%BB%BD%E8%B6%85%E9%93%BE%E6%8E%A5%E7%9A%84%E7%88%AC%E5%8F%96/" class="post-title-link" itemprop="url">省份超链接的爬取</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-25 10:59:20" itemprop="dateCreated datePublished" datetime="2020-04-25T10:59:20+08:00">2020-04-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">html = <span class="string">"""&lt;HTML&gt;</span></span><br><span class="line"><span class="string">&lt;HEAD&gt;</span></span><br><span class="line"><span class="string">&lt;META content="text/html; charset=gb2312" http-equiv=Content-Type&gt;</span></span><br><span class="line"><span class="string">&lt;TITLE&gt;关于更新全国统计用区划代码和城乡划分代码的公告 &lt;/TITLE&gt;</span></span><br><span class="line"><span class="string">&lt;STYLE type=text/css&gt;</span></span><br><span class="line"><span class="string">	BODY &#123;MARGIN: 0px&#125;BODY &#123;FONT-SIZE: 12px&#125;</span></span><br><span class="line"><span class="string">	TD &#123;FONT-SIZE: 12px&#125;</span></span><br><span class="line"><span class="string">	TH &#123;FONT-SIZE: 12px&#125;</span></span><br><span class="line"><span class="string">	.redBig &#123;COLOR: #d00018; FONT-SIZE: 18px; FONT-WEIGHT: bold&#125;</span></span><br><span class="line"><span class="string">	.STYLE3 a&#123;COLOR: #fff; text-decoration:none;&#125;</span></span><br><span class="line"><span class="string">	.STYLE5 &#123;COLOR: #236fbe; FONT-WEIGHT: bold&#125;</span></span><br><span class="line"><span class="string">	.content &#123;LINE-HEIGHT: 1.5; FONT-SIZE: 10.4pt&#125;</span></span><br><span class="line"><span class="string">	.tdPading &#123;PADDING-LEFT: 30px&#125;.blue &#123;COLOR: #0000ff&#125;</span></span><br><span class="line"><span class="string">	.STYLE6 &#123;COLOR: #ffffff&#125;</span></span><br><span class="line"><span class="string">	.a2 &#123;LINE-HEIGHT: 1.5; COLOR: #2a6fbd; FONT-SIZE: 12px&#125;</span></span><br><span class="line"><span class="string">	a2:link &#123;LINE-HEIGHT: 1.5; COLOR: #2a6fbd; FONT-SIZE: 12px&#125;</span></span><br><span class="line"><span class="string">	a2:hover &#123;LINE-HEIGHT: 1.5; COLOR: #2a6fbd; FONT-SIZE: 12px; TEXT-DECORATION: underline&#125;</span></span><br><span class="line"><span class="string">	a2:visited &#123;LINE-HEIGHT: 1.5; COLOR: #2a6fbd; FONT-SIZE: 12px&#125;</span></span><br><span class="line"><span class="string">&lt;/STYLE&gt;</span></span><br><span class="line"><span class="string">&lt;SCRIPT language=javascript&gt;</span></span><br><span class="line"><span class="string">function doZoom(size)&#123;document.getElementById('zoom').style.fontSize=size+'px';&#125;</span></span><br><span class="line"><span class="string">&lt;/SCRIPT&gt;</span></span><br><span class="line"><span class="string">&lt;META name=GENERATOR content="MSHTML 8.00.7600.16700"&gt;</span></span><br><span class="line"><span class="string">&lt;/HEAD&gt;</span></span><br><span class="line"><span class="string">&lt;BODY&gt;</span></span><br><span class="line"><span class="string">&lt;TABLE border=0 cellSpacing=0 cellPadding=0 width=778 align=center&gt;</span></span><br><span class="line"><span class="string">&lt;TBODY&gt;</span></span><br><span class="line"><span class="string">&lt;TR&gt;&lt;TD colSpan=2&gt;&lt;IMG src="http://www.stats.gov.cn/images/banner.jpg" width=778 height=135&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;MAP id=Map name=Map&gt;&lt;AREA href="http://www.stats.gov.cn/english/" shape=rect coords=277,4,328,18&gt;&lt;AREA href="http://www.stats.gov.cn:82/" shape=rect coords=181,4,236,18&gt;&lt;AREA href="http://www.stats.gov.cn/" shape=rect coords=85,4,140,17&gt;&lt;/MAP&gt;&lt;TABLE border=0 cellSpacing=0 cellPadding=0 width=778 align=center&gt;&lt;TBODY&gt;&lt;TR&gt;&lt;TD vAlign=top&gt;&lt;TABLE style="MARGIN-TOP: 15px; MARGIN-BOTTOM: 18px" border=0 cellSpacing=0 cellPadding=0 width="100%" align=center&gt;&lt;TBODY&gt;&lt;TR&gt;&lt;TD style=" BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: 50% top" background=images/topLine.gif align=right&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD style=" BACKGROUND-REPEAT: repeat-y; BACKGROUND-POSITION: right 50%" vAlign=top background=images/rightBorder.gif&gt;&lt;TABLE border=0 cellSpacing=0 cellPadding=0 width="100%"&gt;&lt;TBODY&gt;&lt;TR&gt;&lt;TD width="1%" height="200" vAlign=top&gt;</span></span><br><span class="line"><span class="string">&lt;table class='provincetable' width=775 &gt;&lt;tr &gt;&lt;td colspan=8  height=1 style='FONT-SIZE: 5px' &gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;</span></span><br><span class="line"><span class="string">&lt;tr class='provincehead'&gt;&lt;td  colspan=8 align='center' style='FONT-SIZE: 16px' height=39 vAlign='center' background='images/tiao.jpg'&gt;</span></span><br><span class="line"><span class="string">&lt;strong&gt;关于更新全国统计用区划代码和城乡划分代码的公告&lt;/strong&gt;&lt;/td&gt;</span></span><br><span class="line"><span class="string">&lt;/tr&gt;	&lt;tr &gt;</span></span><br><span class="line"><span class="string">  &lt;td colspan=8  height=50 style='FONT-SIZE: 12px' &gt; 　　为更好满足2020年常规统计调查和专项调查的需要，国家统计局组织开展了2019年度统计用区划代码和城乡划分代码更新维护工作，调查时点为2019年10月31日。目前，已完成更新维护工作,现予公布。</span></span><br><span class="line"><span class="string">  &lt;br&gt; 　　2019年统计用区划代码和城乡划分代码依据国务院批复同意的《关于统计上划分城乡的规定》（国函〔2008〕60号）及国家统计局印发的《统计用区划代码和城乡划分代码编制规则》（国统字〔2009〕91号）编制。</span></span><br><span class="line"><span class="string">  &lt;br&gt; 　　此次发布内容为2019年全国统计用区划代码（12位）和城乡分类代码（3位），地域范围为国家统计局开展统计调查的全国31个省、自治区、直辖市，未包括我国台湾省、香港特别行政区、澳门特别行政区。</span></span><br><span class="line"><span class="string">  &lt;br&gt; 　　《关于统计上划分城乡的规定》指出：“本规定作为统计上划分城乡的依据，不改变现有的行政区划、隶属关系、管理权限和机构编制，以及土地规划、城乡规划等有关规定”。统计用区划代码和城乡划分代码，在统计工作中应当使用，需要在其他工作中使用时，请务必结合有关实际情况。</span></span><br><span class="line"><span class="string">  &lt;/td&gt;</span></span><br><span class="line"><span class="string">&lt;/tr&gt;</span></span><br><span class="line"><span class="string">&lt;tr class='provincetr'&gt;&lt;td&gt;&lt;a href='11.html'&gt;北京市&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='12.html'&gt;天津市&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='13.html'&gt;河北省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='14.html'&gt;山西省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='15.html'&gt;内蒙古自治区&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='21.html'&gt;辽宁省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='22.html'&gt;吉林省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='23.html'&gt;黑龙江省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;</span></span><br><span class="line"><span class="string">&lt;tr class='provincetr'&gt;&lt;td&gt;&lt;a href='31.html'&gt;上海市&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='32.html'&gt;江苏省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='33.html'&gt;浙江省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='34.html'&gt;安徽省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='35.html'&gt;福建省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='36.html'&gt;江西省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='37.html'&gt;山东省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='41.html'&gt;河南省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;</span></span><br><span class="line"><span class="string">&lt;tr class='provincetr'&gt;&lt;td&gt;&lt;a href='42.html'&gt;湖北省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='43.html'&gt;湖南省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='44.html'&gt;广东省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='45.html'&gt;广西壮族自治区&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='46.html'&gt;海南省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='50.html'&gt;重庆市&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='51.html'&gt;四川省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='52.html'&gt;贵州省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;</span></span><br><span class="line"><span class="string">&lt;tr class='provincetr'&gt;&lt;td&gt;&lt;a href='53.html'&gt;云南省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='54.html'&gt;西藏自治区&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='61.html'&gt;陕西省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='62.html'&gt;甘肃省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='63.html'&gt;青海省&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='64.html'&gt;宁夏回族自治区&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href='65.html'&gt;新疆维吾尔自治区&lt;br/&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;/table&gt;</span></span><br><span class="line"><span class="string">&lt;/TD&gt;</span></span><br><span class="line"><span class="string">&lt;/TR&gt;</span></span><br><span class="line"><span class="string">&lt;/TBODY&gt;</span></span><br><span class="line"><span class="string">&lt;/TABLE&gt;</span></span><br><span class="line"><span class="string">&lt;/TD&gt;</span></span><br><span class="line"><span class="string">&lt;/TR&gt;</span></span><br><span class="line"><span class="string">&lt;TR&gt;</span></span><br><span class="line"><span class="string">&lt;TD style="BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: 50% top"          background=images/borderBottom.gif&gt;</span></span><br><span class="line"><span class="string">&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;</span></span><br><span class="line"><span class="string">&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;  &lt;TR&gt;    &lt;TD bgColor=#e2eefc height=2&gt;&lt;/TD&gt;&lt;/TR&gt;  &lt;TR&gt;</span></span><br><span class="line"><span class="string">&lt;TD class=STYLE3 height=60&gt;</span></span><br><span class="line"><span class="string">&lt;DIV align=center style="background-color:#1E67A7; height:75px; color:#fff;"&gt;&lt;br/&gt;</span></span><br><span class="line"><span class="string">版权所有：国家统计局　　&lt;A class=STYLE3       href="http://www.miibeian.gov.cn/"       target=_blank&gt;京ICP备05034670号&lt;/A&gt;&lt;BR&gt;&lt;BR&gt;地址：北京市西城区月坛南街57号（100826）&lt;BR&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/BODY&gt;&lt;/HTML&gt;</span></span><br><span class="line"><span class="string">"""</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">pattern = <span class="string">"'\d&#123;2&#125;\.html'&gt;(.*?)&lt;br/&gt;"</span></span><br><span class="line">provinces = re.findall(pattern,html)</span><br><span class="line">print(provinces)</span><br><span class="line">print(len(provinces))</span><br></pre></td></tr></table></figure>
+
+<pre><code>[&apos;北京市&apos;, &apos;天津市&apos;, &apos;河北省&apos;, &apos;山西省&apos;, &apos;内蒙古自治区&apos;, &apos;辽宁省&apos;, &apos;吉林省&apos;, &apos;黑龙江省&apos;, &apos;上海市&apos;, &apos;江苏省&apos;, &apos;浙江省&apos;, &apos;安徽省&apos;, &apos;福建省&apos;, &apos;江西省&apos;, &apos;山东省&apos;, &apos;河南省&apos;, &apos;湖北省&apos;, &apos;湖南省&apos;, &apos;广东省&apos;, &apos;广西壮族自治区&apos;, &apos;海南省&apos;, &apos;重庆市&apos;, &apos;四川省&apos;, &apos;贵州省&apos;, &apos;云南省&apos;, &apos;西藏自治区&apos;, &apos;陕西省&apos;, &apos;甘肃省&apos;, &apos;青海省&apos;, &apos;宁夏回族自治区&apos;, &apos;新疆维吾尔自治区&apos;]
+31</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pattern = <span class="string">"&lt;a\shref='(\d&#123;2&#125;\.html)'&gt;"</span></span><br><span class="line">hrefs = re.findall(pattern,html)</span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> zip(provinces,hrefs):</span><br><span class="line">    print(item)</span><br></pre></td></tr></table></figure>
+
+<pre><code>(&apos;北京市&apos;, &apos;11.html&apos;)
+(&apos;天津市&apos;, &apos;12.html&apos;)
+(&apos;河北省&apos;, &apos;13.html&apos;)
+(&apos;山西省&apos;, &apos;14.html&apos;)
+(&apos;内蒙古自治区&apos;, &apos;15.html&apos;)
+(&apos;辽宁省&apos;, &apos;21.html&apos;)
+(&apos;吉林省&apos;, &apos;22.html&apos;)
+(&apos;黑龙江省&apos;, &apos;23.html&apos;)
+(&apos;上海市&apos;, &apos;31.html&apos;)
+(&apos;江苏省&apos;, &apos;32.html&apos;)
+(&apos;浙江省&apos;, &apos;33.html&apos;)
+(&apos;安徽省&apos;, &apos;34.html&apos;)
+(&apos;福建省&apos;, &apos;35.html&apos;)
+(&apos;江西省&apos;, &apos;36.html&apos;)
+(&apos;山东省&apos;, &apos;37.html&apos;)
+(&apos;河南省&apos;, &apos;41.html&apos;)
+(&apos;湖北省&apos;, &apos;42.html&apos;)
+(&apos;湖南省&apos;, &apos;43.html&apos;)
+(&apos;广东省&apos;, &apos;44.html&apos;)
+(&apos;广西壮族自治区&apos;, &apos;45.html&apos;)
+(&apos;海南省&apos;, &apos;46.html&apos;)
+(&apos;重庆市&apos;, &apos;50.html&apos;)
+(&apos;四川省&apos;, &apos;51.html&apos;)
+(&apos;贵州省&apos;, &apos;52.html&apos;)
+(&apos;云南省&apos;, &apos;53.html&apos;)
+(&apos;西藏自治区&apos;, &apos;54.html&apos;)
+(&apos;陕西省&apos;, &apos;61.html&apos;)
+(&apos;甘肃省&apos;, &apos;62.html&apos;)
+(&apos;青海省&apos;, &apos;63.html&apos;)
+(&apos;宁夏回族自治区&apos;, &apos;64.html&apos;)
+(&apos;新疆维吾尔自治区&apos;, &apos;65.html&apos;)</code></pre>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/25/%E7%BF%BB%E8%AF%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hasaki">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/25/%E7%BF%BB%E8%AF%91/" class="post-title-link" itemprop="url">翻译</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-25 10:30:29" itemprop="dateCreated datePublished" datetime="2020-04-25T10:30:29+08:00">2020-04-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> request</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_res</span><span class="params">()</span>:</span></span><br><span class="line">    url = <span class="string">"https://cn.bing.com/translator/"</span></span><br><span class="line">    text =input(<span class="string">"请输入你想要翻译的内容:"</span>)</span><br><span class="line">    data = &#123;</span><br><span class="line">        <span class="string">"from"</span>: <span class="string">"zh-Hans"</span>,</span><br><span class="line">        <span class="string">"to"</span>: <span class="string">"en"</span>,</span><br><span class="line">        <span class="string">"text"</span>: text</span><br><span class="line">    &#125;</span><br><span class="line">    response = resquests.post(url=url,data=data)</span><br><span class="line">    translate = response.content.decode(<span class="string">"utf-8"</span>)</span><br><span class="line">    translate = json.loads(translate)</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> translate[<span class="string">"translations"</span>]</span><br><span class="line">         print(item[<span class="string">"normalizedTarget"</span>])</span><br><span class="line">    </span><br><span class="line">get_res()</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/29/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -534,127 +807,6 @@ AttributeError: &apos;NoneType&apos; object has no attribute &apos;group&apos;</
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="liu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="hasaki">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">我的第二篇博客</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-02-19 08:45:44 / 修改时间：09:28:14" itemprop="dateCreated datePublished" datetime="2020-02-19T08:45:44+08:00">2020-02-19</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="雪中悍刀行"><a href="#雪中悍刀行" class="headerlink" title="雪中悍刀行"></a>雪中悍刀行</h2><p>有个白狐儿脸，佩双刀绣冬春雷，要做那天下第一。湖底有白发老魁爱吃荤。缺门牙老仆背剑匣。山上有个骑青牛的年轻师叔祖，不敢下山。有个骑熊猫扛向日葵不太冷的少女杀手。 这个江湖，高人出行要注重出尘装扮，女侠行走江湖要注意培养人气，宗派要跟庙堂打好关系。 而主角，则潇洒带刀，把江湖捅了一个通透。 小二，上酒～</p>
-<h2 id="斗罗大陆"><a href="#斗罗大陆" class="headerlink" title="斗罗大陆"></a>斗罗大陆</h2><p>初代史莱克七怪，之所以叫史莱克七怪，有几个原因：一个是因为他们是出身史莱克学院的怪物天才，然后就是因为当时整个学院也只有他们七个人而已；而最重要，也是令史莱克学院为之扬名的，就是他们代表学院所参加的那一场全大陆高级魂师学院精英大赛。在那场大赛开始之时，没有人看好史莱克七怪，史莱克学院也是籍籍无名。但是，史莱克七怪却凭借着自身实力，逐渐杀出重围，并且冲进了最后的决赛。他们决赛的对手，来自于强大的武魂殿，在整体实力完全逊色于对手的情况下。在史莱克七怪灵魂人物唐三的率领下，史莱克七怪力战而胜，从而奠定了史莱克学院未来成为大陆第一学院的基础。史莱克七怪之名也从此传扬开来。<br>为了感念初代史莱克七怪为学院所作的贡献，每隔五年，学院都会选出新的史莱克七怪，而他们，也将代表学院参加五年一度的全大陆高级魂师学院斗魂大赛，而初代史莱克七怪则被后世誉为“史莱克七圣”。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="liu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="hasaki">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">我的第一篇博客</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-02-18 16:05:02 / 修改时间：19:26:41" itemprop="dateCreated datePublished" datetime="2020-02-18T16:05:02+08:00">2020-02-18</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="第一个标题"><a href="#第一个标题" class="headerlink" title="第一个标题"></a>第一个标题</h2><p>这特么作者写的啥啊</p>
-<h2 id="心情"><a href="#心情" class="headerlink" title="心情"></a>心情</h2><p>无比忐忑的心情</p>
-<h2 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h2><p>作者真特么辣鸡</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -722,7 +874,7 @@ AttributeError: &apos;NoneType&apos; object has no attribute &apos;group&apos;</
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
